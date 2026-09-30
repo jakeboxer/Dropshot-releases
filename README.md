@@ -16,7 +16,9 @@ Open <http://127.0.0.1:8000>. Stop the server with Ctrl-C. There are no dependen
 
 The publishing source is **main**, **/(root)**, configured in [repository Pages settings](https://github.com/jakeboxer/Dropshot-releases/settings/pages). `.nojekyll` tells Pages to serve the static files without Jekyll processing.
 
-Commit changes and push to `main` to publish. Check the Pages deployment in [Actions](https://github.com/jakeboxer/Dropshot-releases/actions), then verify the public site at <https://jakeboxer.github.io/Dropshot-releases/>.
+Commit changes and push to `main` to publish. Check the Pages deployment in [Actions](https://github.com/jakeboxer/Dropshot-releases/actions), then verify the project URL at <https://jakeboxer.github.io/Dropshot-releases/>.
+
+The initial deployment inherits the account Pages domain and is currently served at <http://jakeboxer.com/Dropshot-releases/>. The default project URL redirects there. HTTPS on the inherited domain currently fails certificate validation; resolving the domain configuration is pending.
 
 See [GitHub's publishing-source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 

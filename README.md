@@ -18,7 +18,7 @@ The publishing source is **main**, **/(root)**, configured in [repository Pages 
 
 Commit changes and push to `main` to publish. Check the Pages deployment in [Actions](https://github.com/jakeboxer/Dropshot-releases/actions), then verify the project URL at <https://jakeboxer.github.io/Dropshot-releases/>.
 
-The initial deployment inherits the account Pages domain and is currently served at <http://jakeboxer.com/Dropshot-releases/>. The default project URL redirects there. HTTPS on the inherited domain currently fails certificate validation; resolving the domain configuration is pending.
+The site uses the default GitHub Pages domain with HTTPS enforced. No custom domain is configured.
 
 See [GitHub's publishing-source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 

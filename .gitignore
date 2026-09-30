@@ -16,3 +16,6 @@
 
 # Local preview logs
 *.log
+
+# Local visual review captures
+.impeccable/review/

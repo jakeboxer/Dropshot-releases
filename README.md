@@ -1,6 +1,6 @@
 # Dropshot public site
 
-A minimal static website for Dropshot. This public repository can also host downloadable DMGs as GitHub Release assets. The app source lives separately.
+A static rave-inspired download site for Dropshot. This public repository can also host downloadable DMGs as GitHub Release assets. The app source lives separately.
 
 ## Local preview
 
@@ -10,7 +10,7 @@ From this directory, run:
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open <http://127.0.0.1:8000>. Stop the server with Ctrl-C. There are no dependencies or build step; all page styles are in `index.html`.
+Open <http://127.0.0.1:8000>. Stop the server with Ctrl-C. There are no dependencies or build step; page markup is in `index.html` and styles are in `style.css`. Anton is self-hosted in `assets/` with its SIL Open Font License.
 
 ## Publishing
 
@@ -24,4 +24,6 @@ See [GitHub's publishing-source documentation](https://docs.github.com/en/pages/
 
 ## Scope
 
-This initial page has no download link. Upload app binaries as GitHub Release assets before adding one. Custom domains, visual design, and an update feed are later work.
+The download control explicitly says “coming soon” until a public installer exists. When a release is published, replace the disabled button with an anchor to the verified release asset, update the availability copy, and verify the listed macOS and architecture requirements.
+
+The page respects reduced-motion preferences. The user-provided raw app icon is included unchanged in `assets/app-icon.png`; the earlier screenshot remains reference-only. Custom domains and an update feed are outside this design change.

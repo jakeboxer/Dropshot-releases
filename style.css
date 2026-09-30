@@ -117,3 +117,5 @@ body{min-width:1064px}
 .format-sticker:not(.png-sticker){left:calc(var(--content-gutter) + 520px + 24px)}
 
 .format-sticker:not(.png-sticker){bottom:113px}
+
+.nav-link{display:inline-flex;align-items:center;gap:10px}.download-icon{width:20px;height:20px;flex:none;stroke-linecap:round;stroke-linejoin:round}

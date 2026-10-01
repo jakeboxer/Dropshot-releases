@@ -38,7 +38,24 @@ h1 .outline{color:var(--pink);-webkit-text-stroke:1px var(--ink);text-shadow:6px
 
 .ticker s{text-decoration-thickness:3px;text-decoration-color:currentColor}
 
-.nav-link:disabled{opacity:1;cursor:default;text-decoration:none}.nav-link:disabled:hover{background:var(--acid)}
+.nav-link:disabled{opacity:1;cursor:default;text-decoration:none}
+.nav-link{transition:background-color 150ms ease-out}
+.nav-link .download-icon{transition:transform 150ms ease-out}
+.icon-flyer{filter:drop-shadow(12px 14px 0 #070922)}
+.icon-flyer .app-icon{filter:none;transition:opacity 150ms ease-out}
+.icon-flyer::before{content:"";position:absolute;inset:0;background:var(--pink);mask:url('assets/app-icon.webp') center/contain no-repeat;opacity:0;transition:opacity 150ms ease-out;pointer-events:none}
+.icon-download{position:absolute;inset:25%;width:50%;height:50%;color:var(--ink);stroke-linecap:round;stroke-linejoin:round;opacity:0;transition:opacity 150ms ease-out,transform 150ms ease-out;pointer-events:none}
+@media (hover:hover){
+  .nav-link:hover{background:var(--pink)}
+  .nav-link:hover .download-icon{transform:translateY(3px)}
+  .icon-flyer:hover .app-icon{opacity:0}
+  .icon-flyer:hover::before,.icon-flyer:hover .icon-download{opacity:1}
+  .icon-flyer:hover .icon-download{transform:translateY(3px)}
+}
+@media(prefers-reduced-motion:reduce){
+  .nav-link,.nav-link .download-icon,.icon-flyer .app-icon,.icon-flyer::before,.icon-download{transition:none}
+  .nav-link:hover .download-icon,.icon-flyer:hover .icon-download{transform:none}
+}
 
 /* Leave more room in the hero for the forthcoming screen recording. */
 .hero-heading h1{font-size:clamp(70px,108px,130px)}

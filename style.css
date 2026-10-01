@@ -121,6 +121,7 @@ body{min-width:1064px}
 .nav-link{display:inline-flex;align-items:center;gap:10px}.download-icon{width:20px;height:20px;flex:none;stroke-linecap:round;stroke-linejoin:round}
 
 .demo-screen video{display:block;width:100%;height:auto}
+.mobile-platform-note{display:none}
 
 /* Touch-first devices get a separate layout; desktop window width never
    changes the fixed canvas above. Keep this layout in landscape as well. */
@@ -130,19 +131,20 @@ body{min-width:1064px}
   .masthead,.hero,footer{width:calc(100% - 32px);max-width:600px}
   .masthead{height:auto;min-height:112px;padding:14px 12px;display:grid;grid-template-columns:1fr auto;gap:14px 8px}
   .wordmark{font-size:28px;min-height:44px}
-  .nav-link{grid-column:2;grid-row:1;min-height:44px;padding:7px 9px;font-size:11px;gap:6px}
+  .nav-link{display:none}
+  .mobile-platform-note{display:block;grid-column:2;grid-row:1;color:var(--acid);font-size:12px;font-weight:700}
   .header-note{grid-column:1 / -1;margin:0;font-size:11px;line-height:1.4}
   .hero{display:grid;grid-template-areas:"heading" "demo" "icon" "jpeg" "png" "note";grid-template-columns:minmax(0,1fr);padding:32px 8px 38px;overflow:visible;min-height:0}
   .hero-heading{grid-area:heading;width:auto;margin:0}
   .hero-heading h1{font-size:clamp(44px,15.5vw,76px);gap:.24em}
   .demo-slot{grid-area:demo;width:100%;margin:36px 0 0}
-  .recording-label{right:-4px;font-size:10px;transform:translateY(-50%) rotate(6deg)}
+  .recording-label{right:-4px;font-size:11px;transform:translateY(-50%) rotate(6deg)}
   .demo-caption{font-size:17px;line-height:1.5;margin:24px 2px 0}
   .icon-flyer{grid-area:icon;position:relative;inset:auto;width:72%;max-width:280px;justify-self:center;margin:42px 0 34px}
   .format-sticker:not(.png-sticker),.png-sticker{position:relative;inset:auto;width:205px;margin:0}
   .format-sticker:not(.png-sticker){grid-area:jpeg;justify-self:start;margin-left:8px}
   .png-sticker{grid-area:png;justify-self:end;margin:16px 8px 0 0}
-  .edge-note{grid-area:note;position:static;writing-mode:horizontal-tb;font-size:10px;line-height:1.5;letter-spacing:.06em;text-align:center;margin-top:32px}
+  .edge-note{grid-area:note;position:static;writing-mode:horizontal-tb;font-size:11px;line-height:1.5;letter-spacing:.06em;text-align:center;margin-top:32px}
   footer{display:flex;flex-wrap:wrap;gap:18px 24px;padding:28px 8px max(28px,env(safe-area-inset-bottom))}
   .footer-brand{display:inline-flex;align-items:center;min-height:44px}
   footer p{margin:0;line-height:1.7}

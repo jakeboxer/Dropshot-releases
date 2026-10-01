@@ -47,7 +47,7 @@ h1 .outline{color:var(--pink);-webkit-text-stroke:1px var(--ink);text-shadow:6px
 
 .demo-slot{position:relative;z-index:2;width:min(640px,65%);margin:35px 0 5px 0;transform:rotate(-1deg)}
 .demo-label{display:table;background:var(--acid);color:var(--ink);padding:7px 12px;font:700 14px 'Courier New',monospace;transform:rotate(2deg);position:relative;z-index:1;margin-bottom:-3px}
-.demo-screen{aspect-ratio:16/9;background:var(--ink);border:3px solid white;box-shadow:7px 7px 0 var(--ink);display:grid;place-items:center;text-align:center}
+.demo-screen{aspect-ratio:auto;background:var(--ink);border:3px solid white;box-shadow:7px 7px 0 var(--ink);display:block;text-align:center}
 .demo-screen p{font:14px/1.7 'Courier New',monospace;color:white}.demo-screen strong{font-size:inherit;color:inherit;font-weight:inherit}
 
 
@@ -119,3 +119,5 @@ body{min-width:1064px}
 .format-sticker:not(.png-sticker){bottom:113px}
 
 .nav-link{display:inline-flex;align-items:center;gap:10px}.download-icon{width:20px;height:20px;flex:none;stroke-linecap:round;stroke-linejoin:round}
+
+.demo-screen video{display:block;width:100%;height:auto}

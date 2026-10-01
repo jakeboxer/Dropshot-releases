@@ -97,3 +97,5 @@ Header, hero and footer are centered with a 1200px maximum width and responsive 
 The user requested invariant element sizes while resizing. Header, hero and footer now use a fixed 1200px canvas, with 40px content gutters, 96px headline, 348px icon and 640px recording. Width breakpoints are removed; narrow windows scroll horizontally. The ticker remains full-bleed and reduced-motion preferences remain supported.
 
 The fixed canvas is now 1024px with a 520px recording placeholder. The 348px icon and 96px headline retain their sizes; the full-width ticker is unchanged.
+
+Touch-first devices (`hover: none` and `pointer: coarse`) use a separate single-column layout in either orientation: header, headline, recording and caption, app icon, JPEG/PNG stickers, format ticker, then footer. This layout has a 600px content maximum with phone-sized gutters and type. Desktop window resizing continues to use the fixed 1024px canvas and invariant element sizes; viewport width alone never activates the mobile layout.

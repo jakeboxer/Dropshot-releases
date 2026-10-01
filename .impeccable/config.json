@@ -1,1 +1,27 @@
-{"buildPath":"code"}
+{
+  "buildPath": "code",
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font",
+        "value": "georgia",
+        "createdAt": "2026-10-01T02:01:15.126Z",
+        "reason": "DESIGN.md explicitly preserves mismatched Georgia italic, Courier and Arial in the existing flyer; this task preserves that design."
+      },
+      {
+        "rule": "design-system-font",
+        "value": "courier new",
+        "createdAt": "2026-10-01T02:01:15.159Z",
+        "reason": "DESIGN.md explicitly preserves mismatched Georgia italic, Courier and Arial in the existing flyer; this task preserves that design."
+      },
+      {
+        "rule": "overused-font",
+        "value": "arial",
+        "createdAt": "2026-10-01T02:02:08.860Z",
+        "reason": "DESIGN.md explicitly preserves mismatched Anton, Georgia italic, Courier and Arial; the user requested preserving the existing desktop design."
+      }
+    ]
+  }
+}

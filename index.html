@@ -15,12 +15,12 @@
 <header class="masthead">
 <a class="wordmark" href="#" aria-label="Dropshot home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2v19M7 13l9 9 9-9M3 22v7h26v-7"/></svg>Dropshot</a>
 <span class="header-note">!! HEIC CONVERSION NIGHT !!<br>EVERY NIGHT. ON YOUR COMPUTER.</span>
-<button class="nav-link" type="button" data-download aria-haspopup="dialog" aria-controls="download-dialog">DOWNLOAD <svg class="download-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 17v4h16v-4"/></svg></button>
+<a class="nav-link" href="https://github.com/jakeboxer/Dropshot-releases/releases/latest/download/Dropshot.dmg">DOWNLOAD <svg class="download-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 17v4h16v-4"/></svg></a>
 <span class="mobile-platform-note">macOS only</span>
 </header>
 <main id="main">
 <section class="hero" aria-labelledby="headline">
-<button class="icon-flyer" type="button" data-download aria-label="Download Dropshot" aria-haspopup="dialog" aria-controls="download-dialog"><img class="app-icon" src="assets/app-icon.webp" width="1024" height="1024" alt=""><svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 17v4h16v-4"/></svg></button>
+<a class="icon-flyer" href="https://github.com/jakeboxer/Dropshot-releases/releases/latest/download/Dropshot.dmg" aria-label="Download Dropshot"><img class="app-icon" src="assets/app-icon.webp" width="1024" height="1024" alt=""><svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 17v4h16v-4"/></svg></a>
 <div class="hero-heading"><h1 id="headline"><span>i</span> <span class="convert">hate</span> <span class="outline">.HEICs</span></h1></div>
 
 
@@ -34,15 +34,5 @@
 <div class="ticker" aria-hidden="true"><div><s>HEIC</s> <span>✳</span> JPEG <span>✳</span> PNG <span>✳</span> <s>HEIC</s> <span>✳</span> JPEG <span>✳</span> PNG <span>✳</span> <s>HEIC</s> <span>✳</span> JPEG <span>✳</span> PNG <span>✳</span> <s>HEIC</s> <span>✳</span> JPEG <span>✳</span> PNG <span>✳</span> <s>HEIC</s> <span>✳</span> JPEG <span>✳</span> PNG <span>✳</span> <s>HEIC</s> <span>✳</span> JPEG <span>✳</span> PNG <span>✳</span> <s>HEIC</s> <span>✳</span> JPEG <span>✳</span> PNG <span>✳</span> <s>HEIC</s> <span>✳</span> JPEG <span>✳</span> PNG <span>✳</span> </div></div>
 </main>
 <footer><a class="footer-brand" href="#">Dropshot</a><p>IT’S JUST A MACOS MENU BAR APP<br>MADE BY <a href="https://x.com/jakecard" style="text-decoration:underline;text-underline-offset:3px">JAKE CARD</a>.</p><span>HEIC → JPEG / PNG</span></footer>
-<dialog class="download-dialog" id="download-dialog" aria-labelledby="download-dialog-title">
-  <h2 id="download-dialog-title">coming soon!!</h2>
-  <form method="dialog"><button class="dialog-close" autofocus>close</button></form>
-</dialog>
-<script>
-  const downloadDialog = document.getElementById('download-dialog');
-  document.querySelectorAll('[data-download]').forEach(button => {
-    button.addEventListener('click', () => downloadDialog.showModal());
-  });
-</script>
 </body>
 </html>

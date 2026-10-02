@@ -10,7 +10,7 @@
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.5</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/jakeboxer/Dropshot-releases/releases/download/build-17/Dropshot.dmg" length="2909139" type="application/octet-stream" sparkle:edSignature="3zAhl8V+WZNAjge9Xk8UMbarDkdKESsUU+voXyMo//t9s9yn5332pK1hygbwcKTXHdsukhZgKncsJfwSKw5DDA=="/>
+            <enclosure url="https://github.com/jakecard/Dropshot-releases/releases/download/build-17/Dropshot.dmg" length="2909139" type="application/octet-stream" sparkle:edSignature="3zAhl8V+WZNAjge9Xk8UMbarDkdKESsUU+voXyMo//t9s9yn5332pK1hygbwcKTXHdsukhZgKncsJfwSKw5DDA=="/>
         </item>
     </channel>
 </rss>

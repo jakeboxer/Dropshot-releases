@@ -1,6 +1,6 @@
 # Issue tracker: GitHub
 
-Issues and specs live in GitHub Issues for jakeboxer/Dropshot-releases.
+Issues and specs live in GitHub Issues for jakecard/Dropshot-releases.
 Use the gh CLI from this clone; it infers the repository from origin.
 
 ## Operations

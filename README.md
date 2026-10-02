@@ -14,16 +14,18 @@ Open <http://127.0.0.1:8000>. Stop the server with Ctrl-C. There are no dependen
 
 ## Publishing
 
-The publishing source is **main**, **/(root)**, configured in [repository Pages settings](https://github.com/jakeboxer/Dropshot-releases/settings/pages). `.nojekyll` tells Pages to serve the static files without Jekyll processing.
+The publishing source is **main**, **/(root)**, configured in [repository Pages settings](https://github.com/jakecard/Dropshot-releases/settings/pages). `.nojekyll` tells Pages to serve the static files without Jekyll processing.
 
-Commit changes and push to `main` to publish. Check the Pages deployment in [Actions](https://github.com/jakeboxer/Dropshot-releases/actions), then verify the project URL at <https://jakeboxer.github.io/Dropshot-releases/>.
+Commit changes and push to `main` to publish. Check the Pages deployment in [Actions](https://github.com/jakecard/Dropshot-releases/actions), then verify the project URL at <https://jakecard.dev/Dropshot-releases/>.
 
-The site uses the default GitHub Pages domain with HTTPS enforced. No custom domain is configured.
+The site inherits the `jakecard.dev` custom domain from `jakecard/jakecard.github.io`, with HTTPS enforced. Keep `https://jakecard.dev/Dropshot-releases/appcast.xml` reachable: installed apps use this stable URL for automatic update checks.
 
 See [GitHub's publishing-source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
-## Scope
+## Downloads and updates
 
-The download control explicitly says “coming soon” until a public installer exists. When a release is published, replace the disabled button with an anchor to the verified release asset, update the availability copy, and verify the listed macOS and architecture requirements.
+Both download links point to the latest `Dropshot.dmg` asset in `jakecard/Dropshot-releases`. Upload each signed DMG to its immutable release tag before publishing its entry in `appcast.xml`. Feed enclosure URLs must use the tag-specific asset URL, not `releases/latest/download`.
 
-The page respects reduced-motion preferences. The user-provided raw app icon is included unchanged in `assets/app-icon.png`; the earlier screenshot remains reference-only. Custom domains and an update feed are outside this design change.
+Preserve the app bundle identifier, Sparkle public key, and existing feed URL when changing hosting ownership. Verify the website, feed, and downloaded DMG after deployment; a complete update test additionally requires an installed lower-build release and a newer published release.
+
+The page respects reduced-motion preferences and serves `assets/app-icon.webp`.
